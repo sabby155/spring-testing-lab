@@ -12,7 +12,10 @@ public class HelloController {
     public HelloController(JokeService jokeService) {
         this.jokeService = jokeService;
     }
-
+    @GetMapping("/status")
+    public String status() {
+        return "Congratulations - you must be an admin since you can see the application's status information";
+    }
 
     @GetMapping("/hello")
     public String hello(@RequestParam(name = "targetName", defaultValue = "Stephanie") String name) {

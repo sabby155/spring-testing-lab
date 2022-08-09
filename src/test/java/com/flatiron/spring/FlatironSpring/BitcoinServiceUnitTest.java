@@ -12,11 +12,12 @@ class BitcoinServiceUnitTest {
     void shouldReturnCost() {
         BitCoinService bitCoinService = Mockito.mock(BitCoinService.class);
         String bitcoinPrice = "1000.056";
+        String name = "bitcoin";
         BitcoinController priceController = new BitcoinController(bitCoinService);
-        when(bitCoinService.getBitcoinPrice()).thenReturn(bitcoinPrice);
+        when(bitCoinService.getBitcoinPrice(name)).thenReturn(bitcoinPrice);
         String expected = "Price: " +
                 bitcoinPrice;
-        String actual = priceController.price();
+        String actual = priceController.price(name);
         assertEquals(expected, actual);
     }
 

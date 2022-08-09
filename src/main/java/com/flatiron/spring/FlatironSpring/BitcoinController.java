@@ -15,7 +15,7 @@ public class BitcoinController {
     }
 
     @GetMapping("/price")
-    public String price() {
-        return "Price: " + bitcoinService.getBitcoinPrice();
+    public String price(@RequestParam(name = "targetName", defaultValue = "bitcoin") String name) {
+        return "Price: " + bitcoinService.getBitcoinPrice(name);
     }
 }

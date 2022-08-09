@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.Matchers.containsString;
@@ -31,6 +32,7 @@ class HelloControllerIntegrationTest {
 //                .andExpect(content().string(containsString("Hello Stephanie")));
 //    }
 
+    @WithMockUser(username = "fakeuser")
     @Test
     void shouldGreetDefault() throws Exception {
         mockMvc.perform(get("/hello"))
@@ -38,7 +40,7 @@ class HelloControllerIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello Stephanie")));
     }
-
+    @WithMockUser(username = "fakeuser")
     @Test
     void shouldGreetByName() throws Exception {
         String greetingName = "Jamie";
