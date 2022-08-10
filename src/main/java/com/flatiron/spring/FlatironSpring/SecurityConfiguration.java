@@ -20,17 +20,31 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 //        http.authorizeRequests().anyRequest().permitAll();
         http.authorizeRequests()
-                .antMatchers("/status")
+                .antMatchers("/api/status")
                 .hasAuthority("admin")
-                .antMatchers("/hello")
-                .hasAuthority("admin")
-                .antMatchers("/price")
+
+                .antMatchers("/api/price")
                 .hasAuthority("admin");
+
+
+
+        http.authorizeRequests()
+//                .anyRequest()
+                .antMatchers("/api/**")
+                .authenticated()
+                .and()
+//                .formLogin()
+                .oauth2Login() // change httpBasic() to oauth2Login() for API resources
+                .and()
+                .logout();
+
+        // adding a rule to require authentication for all content via OAuth
         http.authorizeRequests()
                 .anyRequest()
                 .authenticated()
                 .and()
-                .formLogin();
+                .oauth2Login();
+
     }
 
     @Bean

@@ -29,7 +29,7 @@ class BitcoinControllerIntegrationTest {
     void price() throws Exception {
         String name = "bitcoin";
         String result = bitcoinService.getBitcoinPrice(name);
-        mockMvc.perform(get("/price")
+        mockMvc.perform(get("/api/price")
                 .param("targetName", name))
                 .andDo(print())
                 .andExpect(status().isOk())

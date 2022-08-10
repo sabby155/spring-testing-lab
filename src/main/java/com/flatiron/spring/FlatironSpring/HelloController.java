@@ -12,21 +12,19 @@ public class HelloController {
     public HelloController(JokeService jokeService) {
         this.jokeService = jokeService;
     }
-    @GetMapping("/status")
+    @GetMapping("/api/status")
     public String status() {
         return "Congratulations - you must be an admin since you can see the application's status information";
     }
 
-    @GetMapping("/hello")
+    @GetMapping("/api/hello")
     public String hello(@RequestParam(name = "targetName", defaultValue = "Stephanie") String name) {
         String greeting = "Hello " + name;
         greeting += "<br/>";
         greeting += "Dad joke of the moment: " + jokeService.getDadJoke();
         return greeting;
     }
-//    public String hello(@RequestParam(name = "targetName", defaultValue = "Stephanie") String name) {
-//        return String.format("Hello %s", name);
-//    }
+
 
 //    @GetMapping("/reverse")
 //    public String reverse(String stringToReverse) {

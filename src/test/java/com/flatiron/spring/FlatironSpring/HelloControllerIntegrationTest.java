@@ -35,7 +35,7 @@ class HelloControllerIntegrationTest {
     @WithMockUser(username = "fakeuser")
     @Test
     void shouldGreetDefault() throws Exception {
-        mockMvc.perform(get("/hello"))
+        mockMvc.perform(get("/api/hello"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello Stephanie")));
@@ -44,7 +44,7 @@ class HelloControllerIntegrationTest {
     @Test
     void shouldGreetByName() throws Exception {
         String greetingName = "Jamie";
-        mockMvc.perform(get("/hello")
+        mockMvc.perform(get("/api/hello")
                         .param("targetName", greetingName))
                 .andDo(print())
                 .andExpect(status().isOk())
