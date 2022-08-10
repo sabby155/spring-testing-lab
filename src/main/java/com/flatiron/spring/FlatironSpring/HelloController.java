@@ -27,12 +27,13 @@ public class HelloController {
 
     @GetMapping("/api/hello")
     public String hello(@RequestParam(name = "targetName", defaultValue = "Stephanie") String name) {
-        System.out.println("In HelloController.hello() method");
-//        logger.info("In HelloController.hello() method");
+        log.trace("Entering hello()");
         log.info("In HelloController.hello() method");
         String greeting = "Hello " + name;
         greeting += "<br/>";
+        log.trace("Fetching joke of the moment");
         greeting += "Dad joke of the moment: " + jokeService.getDadJoke();
+        log.trace("Returning greeting from hello()");
         return greeting;
     }
 

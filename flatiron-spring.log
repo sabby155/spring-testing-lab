@@ -1,0 +1,32 @@
+FILE: Starting FlatironSpringApplication using Java 18.0.1.1 on Sabrinas-Air.fios-router.home with PID 57329 (/Users/sabrinachowdhury/Downloads/FlatironSpring/target/classes started by sabrinachowdhury in /Users/sabrinachowdhury/Downloads/FlatironSpring)
+FILE: Starting FlatironSpringApplication using Java 18.0.1.1 on Sabrinas-Air.fios-router.home with PID 57329 (/Users/sabrinachowdhury/Downloads/FlatironSpring/target/classes started by sabrinachowdhury in /Users/sabrinachowdhury/Downloads/FlatironSpring)
+FILE: Running with Spring Boot v2.7.2, Spring v5.3.22
+FILE: Running with Spring Boot v2.7.2, Spring v5.3.22
+FILE: No active profile set, falling back to 1 default profile: "default"
+FILE: No active profile set, falling back to 1 default profile: "default"
+FILE: Tomcat initialized with port(s): 8080 (http)
+FILE: Starting service [Tomcat]
+FILE: Starting Servlet engine: [Apache Tomcat/9.0.65]
+FILE: Initializing Spring embedded WebApplicationContext
+FILE: Root WebApplicationContext: initialization completed in 1882 ms
+FILE: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6fbb4061, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63d5874f, org.springframework.security.web.context.SecurityContextPersistenceFilter@67de7a99, org.springframework.security.web.header.HeaderWriterFilter@2f0bfe17, org.springframework.security.web.csrf.CsrfFilter@f1868c9, org.springframework.security.web.authentication.logout.LogoutFilter@24eb65e3, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@3b705be7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3a790e40, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63cd2cd2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60c73e58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34aeacd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65383667, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5984feef, org.springframework.security.web.session.SessionManagementFilter@42fb8c87, org.springframework.security.web.access.ExceptionTranslationFilter@3a894088, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@643d2dae]
+FILE: Adding welcome page: class path resource [static/index.html]
+FILE: Tomcat started on port(s): 8080 (http) with context path ''
+FILE: Started FlatironSpringApplication in 5.46 seconds (JVM running for 7.41)
+FILE: Started FlatironSpringApplication in 5.46 seconds (JVM running for 7.41)
+FILE: Starting FlatironSpringApplication using Java 18.0.1.1 on Sabrinas-Air.fios-router.home with PID 57353 (/Users/sabrinachowdhury/Downloads/FlatironSpring/target/classes started by sabrinachowdhury in /Users/sabrinachowdhury/Downloads/FlatironSpring)
+FILE: Starting FlatironSpringApplication using Java 18.0.1.1 on Sabrinas-Air.fios-router.home with PID 57353 (/Users/sabrinachowdhury/Downloads/FlatironSpring/target/classes started by sabrinachowdhury in /Users/sabrinachowdhury/Downloads/FlatironSpring)
+FILE: Running with Spring Boot v2.7.2, Spring v5.3.22
+FILE: Running with Spring Boot v2.7.2, Spring v5.3.22
+FILE: No active profile set, falling back to 1 default profile: "default"
+FILE: No active profile set, falling back to 1 default profile: "default"
+FILE: Tomcat initialized with port(s): 8080 (http)
+FILE: Starting service [Tomcat]
+FILE: Starting Servlet engine: [Apache Tomcat/9.0.65]
+FILE: Initializing Spring embedded WebApplicationContext
+FILE: Root WebApplicationContext: initialization completed in 2504 ms
+FILE: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ff7a73, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38830ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@f324455, org.springframework.security.web.header.HeaderWriterFilter@6f9c5048, org.springframework.security.web.csrf.CsrfFilter@35a0e495, org.springframework.security.web.authentication.logout.LogoutFilter@5a02bfe3, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4b31a708, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@11e355ca, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67de7a99, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3b705be7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@370c1968, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65e0b505, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a790e40, org.springframework.security.web.session.SessionManagementFilter@dd71b20, org.springframework.security.web.access.ExceptionTranslationFilter@5a50d9fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61a91c9b]
+FILE: Adding welcome page: class path resource [static/index.html]
+FILE: Tomcat started on port(s): 8080 (http) with context path ''
+FILE: Started FlatironSpringApplication in 6.468 seconds (JVM running for 8.824)
+FILE: Started FlatironSpringApplication in 6.468 seconds (JVM running for 8.824)
