@@ -2,9 +2,11 @@ package com.flatiron.spring.FlatironSpring;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 @Service
 public class BitCoinService {
 
@@ -12,7 +14,7 @@ public class BitCoinService {
         String apiURL = "https://api.coincap.io/v2/assets/" + name;
         RestTemplate restTemplate = new RestTemplate();
         Data result = restTemplate.getForObject(apiURL, Data.class);
-
+        log.info("Received data from crypto API. Here's data ID: " + result.getData().getId());
         return result.getData().getPriceUsd();
     }
 }

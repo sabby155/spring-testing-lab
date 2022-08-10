@@ -19,12 +19,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 //        http.authorizeRequests().anyRequest().permitAll();
-        http.authorizeRequests()
-                .antMatchers("/api/status")
-                .hasAuthority("admin")
-
-                .antMatchers("/api/price")
-                .hasAuthority("admin");
+//        http.authorizeRequests()
+//                .antMatchers("/api/status")
+//                .hasAuthority("admin")
+//
+//                .antMatchers("/api/price")
+//                .hasAuthority("admin");
 
 
 
